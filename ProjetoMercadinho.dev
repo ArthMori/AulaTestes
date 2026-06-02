@@ -1,6 +1,11 @@
 [Project]
+<<<<<<< HEAD:ProjetoMercadinho.dev
 filename=ProjetoMercadinho.dev
 name=ProjetoMercadinho
+=======
+filename=ProjetoCalculadoraC.dev
+name=ProjetoCalculadoraC
+>>>>>>> 18b602b8220c2a71ba0a87de5a7ebf5e420245c6:ProjetoCalculadoraC.dev
 Type=1
 Ver=2
 ObjFiles=
@@ -11,15 +16,20 @@ ResourceIncludes=
 MakeIncludes=
 Compiler=
 CppCompiler=
+<<<<<<< HEAD:ProjetoMercadinho.dev
 Linker=
 IsCpp=1
+=======
+Linker=-lstdc++_@@_
+IsCpp=0
+>>>>>>> 18b602b8220c2a71ba0a87de5a7ebf5e420245c6:ProjetoCalculadoraC.dev
 Icon=
 ExeOutput=
 ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=ProjetoCalculadoraC.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -29,6 +39,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0
+UnitCount=3
 
 [VersionInfo]
 Major=1
@@ -38,14 +49,44 @@ Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=
+FileVersion=1.0.0.0
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=
+ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
+
+[Unit1]
+FileName=main.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=Calculadora.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=TestCalc.cpp
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
 

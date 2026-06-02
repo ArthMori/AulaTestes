@@ -1,7 +1,7 @@
 [Project]
-filename=ProjetoCalculadoraC.dev
-name=ProjetoCalculadoraC
-Type=0
+filename=ProjetoMercadinho.dev
+name=ProjetoMercadinho
+Type=1
 Ver=2
 ObjFiles=
 Includes=
@@ -12,7 +12,7 @@ MakeIncludes=
 Compiler=
 CppCompiler=
 Linker=
-IsCpp=0
+IsCpp=1
 Icon=
 ExeOutput=
 ObjectOutput=

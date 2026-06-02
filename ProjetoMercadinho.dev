@@ -1,11 +1,6 @@
 [Project]
-<<<<<<< HEAD:ProjetoMercadinho.dev
 filename=ProjetoMercadinho.dev
 name=ProjetoMercadinho
-=======
-filename=ProjetoCalculadoraC.dev
-name=ProjetoCalculadoraC
->>>>>>> 18b602b8220c2a71ba0a87de5a7ebf5e420245c6:ProjetoCalculadoraC.dev
 Type=1
 Ver=2
 ObjFiles=
@@ -16,20 +11,15 @@ ResourceIncludes=
 MakeIncludes=
 Compiler=
 CppCompiler=
-<<<<<<< HEAD:ProjetoMercadinho.dev
-Linker=
-IsCpp=1
-=======
 Linker=-lstdc++_@@_
-IsCpp=0
->>>>>>> 18b602b8220c2a71ba0a87de5a7ebf5e420245c6:ProjetoCalculadoraC.dev
+IsCpp=1
 Icon=
 ExeOutput=
 ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=ProjetoCalculadoraC.exe
+OverrideOutputName=ProjetoMercadinho.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -61,8 +51,8 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=main.c
-CompileCpp=0
+FileName=main.cpp
+CompileCpp=1
 Folder=
 Compile=1
 Link=1
@@ -71,18 +61,18 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=Calculadora.c
+FileName=mercadinho.c
 CompileCpp=0
 Folder=
 Compile=1
 Link=1
 Priority=1000
 OverrideBuildCmd=0
-BuildCmd=
+BuildCmd=$(CC) -c mercadinho.c -o mercadinho.o $(CFLAGS)
 
 [Unit3]
-FileName=TestCalc.cpp
-CompileCpp=0
+FileName=minunit.h
+CompileCpp=1
 Folder=
 Compile=1
 Link=1

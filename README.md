@@ -1,6 +1,6 @@
 git clone "link do repositório"
 
-cd "nome da pasta
+cd "nome da pasta"
 
 cd .. (voltar)
 

@@ -1,0 +1,197 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$cmath$>$}\newline
+{\ttfamily \+\#include $<$cstdlib$>$}\newline
+{\ttfamily \+\#include $<$ctime$>$}\newline
+{\ttfamily \+\#include "{}minunit.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{main_8cpp_a08a2f85a57dd3c5c25b3e247358ae3b1}{soma}} (int v1, int v2)
+\begin{DoxyCompactList}\small\item\em Realiza a soma de dois valores inteiros. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{main_8cpp_a2a12ca133ebac89a10ddd6dff889e018}{calcular\+\_\+subtotal}} (float preco, int quantidade)
+\begin{DoxyCompactList}\small\item\em Calcula o subtotal de um item baseado no preco e quantidade. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{main_8cpp_acfab76dbd73aad362941f558de525de1}{calcular\+\_\+troco}} (float valor\+\_\+pago, float valor\+\_\+total)
+\begin{DoxyCompactList}\small\item\em Calcula o troco a ser devolvido ao cliente. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{main_8cpp_a394ae7dc48c03e5991ca7528a5694fd7}{aplicar\+\_\+desconto}} (float valor\+\_\+total, float porcentagem)
+\begin{DoxyCompactList}\small\item\em Aplica um percentual de desconto no valor total. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{main_8cpp_ae8b000e04a2d2a172b0b4a830ddbcc99}{validar\+\_\+estoque}} (int estoque\+\_\+disponivel, int quantidade\+\_\+solicitada)
+\begin{DoxyCompactList}\small\item\em Valida se ha estoque suficiente para realizar a venda. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{main_8cpp_ab669a22a3fd1f6ea1501633083df15bc}{test\+\_\+soma}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{main_8cpp_a89948b4ac77c1e9f91b0dc016a0cfec8}{test\+\_\+calcular\+\_\+subtotal}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{main_8cpp_a1c4d24e0919d4923ace0d69b16e9b4f6}{test\+\_\+calcular\+\_\+troco}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{main_8cpp_a0e3d134ec14d13a5407e4a0997b79f6b}{test\+\_\+aplicar\+\_\+desconto}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{main_8cpp_afbd1c9ac50f8433189c4a16f840d0f3a}{test\+\_\+validar\+\_\+estoque}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{main_8cpp_ad9ac85442970aa280c917ce24ba4ced4}{all\+\_\+tests}} ()
+\item 
+int \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{main_8cpp_a91aa4203331e915f2d20dd26579791ee}{tests\+\_\+run}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{main_8cpp_doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ad9ac85442970aa280c917ce24ba4ced4}\index{main.cpp@{main.cpp}!all\_tests@{all\_tests}}
+\index{all\_tests@{all\_tests}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{all\_tests()}{all\_tests()}}
+{\footnotesize\ttfamily \label{main_8cpp_ad9ac85442970aa280c917ce24ba4ced4} 
+const char \texorpdfstring{$\ast$}{*} all\+\_\+tests (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a394ae7dc48c03e5991ca7528a5694fd7}\index{main.cpp@{main.cpp}!aplicar\_desconto@{aplicar\_desconto}}
+\index{aplicar\_desconto@{aplicar\_desconto}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{aplicar\_desconto()}{aplicar\_desconto()}}
+{\footnotesize\ttfamily \label{main_8cpp_a394ae7dc48c03e5991ca7528a5694fd7} 
+float aplicar\+\_\+desconto (\begin{DoxyParamCaption}\item[{float}]{valor\+\_\+total}{, }\item[{float}]{porcentagem}{}\end{DoxyParamCaption})}
+
+
+
+Aplica um percentual de desconto no valor total. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+\_\+total} & Valor bruto da compra (float). \\
+\hline
+{\em porcentagem} & Percentual de desconto a ser aplicado (0.\+0 a 100.\+0). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor com desconto. Retorna o valor original se a porcentagem for invalida. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a2a12ca133ebac89a10ddd6dff889e018}\index{main.cpp@{main.cpp}!calcular\_subtotal@{calcular\_subtotal}}
+\index{calcular\_subtotal@{calcular\_subtotal}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calcular\_subtotal()}{calcular\_subtotal()}}
+{\footnotesize\ttfamily \label{main_8cpp_a2a12ca133ebac89a10ddd6dff889e018} 
+float calcular\+\_\+subtotal (\begin{DoxyParamCaption}\item[{float}]{preco}{, }\item[{int}]{quantidade}{}\end{DoxyParamCaption})}
+
+
+
+Calcula o subtotal de um item baseado no preco e quantidade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preco} & Valor unitario do produto (float). \\
+\hline
+{\em quantidade} & Quantidade de itens comprados (int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor do subtotal (preco \texorpdfstring{$\ast$}{*} quantidade). 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_acfab76dbd73aad362941f558de525de1}\index{main.cpp@{main.cpp}!calcular\_troco@{calcular\_troco}}
+\index{calcular\_troco@{calcular\_troco}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calcular\_troco()}{calcular\_troco()}}
+{\footnotesize\ttfamily \label{main_8cpp_acfab76dbd73aad362941f558de525de1} 
+float calcular\+\_\+troco (\begin{DoxyParamCaption}\item[{float}]{valor\+\_\+pago}{, }\item[{float}]{valor\+\_\+total}{}\end{DoxyParamCaption})}
+
+
+
+Calcula o troco a ser devolvido ao cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+\_\+pago} & O valor entregue pelo cliente (float). \\
+\hline
+{\em valor\+\_\+total} & O valor total da compra (float). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor do troco. Retorna -\/1.\+0 se o valor pago for insuficiente. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a08a2f85a57dd3c5c25b3e247358ae3b1}\index{main.cpp@{main.cpp}!soma@{soma}}
+\index{soma@{soma}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{soma()}{soma()}}
+{\footnotesize\ttfamily \label{main_8cpp_a08a2f85a57dd3c5c25b3e247358ae3b1} 
+int soma (\begin{DoxyParamCaption}\item[{int}]{v1}{, }\item[{int}]{v2}{}\end{DoxyParamCaption})}
+
+
+
+Realiza a soma de dois valores inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Primeiro valor inteiro. \\
+\hline
+{\em v2} & Segundo valor inteiro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resultado da soma de v1 e v2. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a0e3d134ec14d13a5407e4a0997b79f6b}\index{main.cpp@{main.cpp}!test\_aplicar\_desconto@{test\_aplicar\_desconto}}
+\index{test\_aplicar\_desconto@{test\_aplicar\_desconto}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_aplicar\_desconto()}{test\_aplicar\_desconto()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0e3d134ec14d13a5407e4a0997b79f6b} 
+const char \texorpdfstring{$\ast$}{*} test\+\_\+aplicar\+\_\+desconto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a89948b4ac77c1e9f91b0dc016a0cfec8}\index{main.cpp@{main.cpp}!test\_calcular\_subtotal@{test\_calcular\_subtotal}}
+\index{test\_calcular\_subtotal@{test\_calcular\_subtotal}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_calcular\_subtotal()}{test\_calcular\_subtotal()}}
+{\footnotesize\ttfamily \label{main_8cpp_a89948b4ac77c1e9f91b0dc016a0cfec8} 
+const char \texorpdfstring{$\ast$}{*} test\+\_\+calcular\+\_\+subtotal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a1c4d24e0919d4923ace0d69b16e9b4f6}\index{main.cpp@{main.cpp}!test\_calcular\_troco@{test\_calcular\_troco}}
+\index{test\_calcular\_troco@{test\_calcular\_troco}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_calcular\_troco()}{test\_calcular\_troco()}}
+{\footnotesize\ttfamily \label{main_8cpp_a1c4d24e0919d4923ace0d69b16e9b4f6} 
+const char \texorpdfstring{$\ast$}{*} test\+\_\+calcular\+\_\+troco (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_ab669a22a3fd1f6ea1501633083df15bc}\index{main.cpp@{main.cpp}!test\_soma@{test\_soma}}
+\index{test\_soma@{test\_soma}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_soma()}{test\_soma()}}
+{\footnotesize\ttfamily \label{main_8cpp_ab669a22a3fd1f6ea1501633083df15bc} 
+const char \texorpdfstring{$\ast$}{*} test\+\_\+soma (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_afbd1c9ac50f8433189c4a16f840d0f3a}\index{main.cpp@{main.cpp}!test\_validar\_estoque@{test\_validar\_estoque}}
+\index{test\_validar\_estoque@{test\_validar\_estoque}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_validar\_estoque()}{test\_validar\_estoque()}}
+{\footnotesize\ttfamily \label{main_8cpp_afbd1c9ac50f8433189c4a16f840d0f3a} 
+const char \texorpdfstring{$\ast$}{*} test\+\_\+validar\+\_\+estoque (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_ae8b000e04a2d2a172b0b4a830ddbcc99}\index{main.cpp@{main.cpp}!validar\_estoque@{validar\_estoque}}
+\index{validar\_estoque@{validar\_estoque}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{validar\_estoque()}{validar\_estoque()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae8b000e04a2d2a172b0b4a830ddbcc99} 
+int validar\+\_\+estoque (\begin{DoxyParamCaption}\item[{int}]{estoque\+\_\+disponivel}{, }\item[{int}]{quantidade\+\_\+solicitada}{}\end{DoxyParamCaption})}
+
+
+
+Valida se ha estoque suficiente para realizar a venda. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em estoque\+\_\+disponivel} & Quantidade atual no estoque (int). \\
+\hline
+{\em quantidade\+\_\+solicitada} & Quantidade que o cliente deseja (int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se houver estoque suficiente e o pedido for valido (\texorpdfstring{$>$}{>}0), 0 caso contrario. 
+\end{DoxyReturn}
+
+
+\label{main_8cpp_doc-var-members}
+\Hypertarget{main_8cpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8cpp_a91aa4203331e915f2d20dd26579791ee}\index{main.cpp@{main.cpp}!tests\_run@{tests\_run}}
+\index{tests\_run@{tests\_run}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{tests\_run}{tests\_run}}
+{\footnotesize\ttfamily \label{main_8cpp_a91aa4203331e915f2d20dd26579791ee} 
+int tests\+\_\+run = 0}
+

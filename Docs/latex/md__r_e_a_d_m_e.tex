@@ -1,0 +1,53 @@
+\chapter{Projeto Mercadinho -\/ Engenharia de Software }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Projeto Mercadinho -\/ Engenharia de Software@{Projeto Mercadinho -\/ Engenharia de Software}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+Este repositório contém a Parte 2 do projeto de um sistema de mercadinho, focado em {\bfseries{Arquitetura, Testes e Qualidade de Software}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{🛠️ Estratégia de Versionamento (Git)}{🛠️ Estratégia de Versionamento (Git)}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Para manter a organização e o fluxo de trabalho em equipe, adotamos as seguintes práticas:\+
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Estratégia de Branches:\+}} \texorpdfstring{$\ast$}{*} {\ttfamily \doxylink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}:\+ Branch principal, contendo apenas código testado, documentado e funcional (Definition of Done cumprido).
+\begin{DoxyItemize}
+\item {\ttfamily feature/\+\texorpdfstring{$\ast$}{*}} ou {\ttfamily test/\+\texorpdfstring{$\ast$}{*}}:\+ Branches temporárias criadas para o desenvolvimento de novas lógicas ou adição de testes (ex:\+ {\ttfamily feature/\+cadastro-\/produto}, {\ttfamily test/\+valida-\/senha}).
+\end{DoxyItemize}
+\item {\bfseries{Padrão de Commits:\+}}
+\begin{DoxyItemize}
+\item Utilizamos a convenção de {\itshape Conventional Commits} para manter o histórico claro:\+
+\begin{DoxyItemize}
+\item {\ttfamily feat:\+} Para novas funcionalidades.
+\item {\ttfamily test:\+} Para criação ou alteração de testes unitários (Min\+Unit).
+\item {\ttfamily docs:\+} Para inserção de documentação (Doxygen).
+\item {\ttfamily fix:\+} Para correção de bugs.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Integração e Merges:\+}}
+\begin{DoxyItemize}
+\item O código só é integrado à {\ttfamily \doxylink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} após a funcionalidade possuir seu caso de teste correspondente e documentação técnica, garantindo a qualidade.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{🧪 Estratégia de Testes e Qualidade}{🧪 Estratégia de Testes e Qualidade}}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Foram elaborados 15 casos de testes estruturados cobrindo cenários válidos, alternativos e de exceção.
+\item Utilizamos a biblioteca {\bfseries{Min\+Unit}} para rodar os testes unitários.
+\item A simulação de banco de dados e impostos foi feita através da implementação de {\bfseries{Stubs}}.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{📚 Documentação}{📚 Documentação}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Toda a documentação técnica dos protótipos, parâmetros e retornos foi feita diretamente no código fonte utilizando o padrão {\bfseries{Doxygen}}.
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{Para o grupo:\+}{Para o grupo:\+}}\label{md__r_e_a_d_m_e_autotoc_md5}
+Guia rápido de comandos básicos para subirmos as alterações:\+
+
+\`{}\`{}\`{}bash git clone "{}link do repositório"{}
+
+cd "{}nome da pasta"{}
+
+cd .. (voltar)
+
+git add . (todos os arquivos da pasta)
+
+git commit -\/m "{}mensagem"{}
+
+git push origin main {\itshape (recomendo dar o git pull antes, para ver se está tudo atualizado)} 

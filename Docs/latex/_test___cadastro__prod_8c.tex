@@ -1,0 +1,132 @@
+\doxysection{Proj\+\_\+\+Cad\+\_\+\+Prod/\+\+Test\+\_\+\+Cadastro\+\_\+prod.c File Reference}
+\hypertarget{_test___cadastro__prod_8c}{}\label{_test___cadastro__prod_8c}\index{Proj\_Cad\_Prod/Test\_Cadastro\_prod.c@{Proj\_Cad\_Prod/Test\_Cadastro\_prod.c}}
+{\ttfamily \+\#include "{}minunit.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{_test___cadastro__prod_8c_ae6968fe409c42b6910ad2d67ce348751}{Preco\+\_\+\+Final\+\_\+\+Cons}} (float preco\+\_\+f)
+\begin{DoxyCompactList}\small\item\em Calcula o preco final para o consumidor (margem de 60\%). \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{_test___cadastro__prod_8c_a6902737ea7d2b8de9ba87f382a514087}{stub\+\_\+buscar\+\_\+imposto\+\_\+bd}} (int id\+\_\+estado)
+\begin{DoxyCompactList}\small\item\em Stub:\+ Simula a busca do percentual de imposto no banco de dados. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{_test___cadastro__prod_8c_a9446e804400d4ed5819da30baeb1ab8a}{Preco\+\_\+\+Com\+\_\+\+Imposto}} (float preco\+\_\+base, int id\+\_\+estado)
+\begin{DoxyCompactList}\small\item\em Calcula o preco final incluindo o imposto simulado (Depende do Stub). \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_test___cadastro__prod_8c_ab338451da17c6b3aeee50107d83c0755}{MU\+\_\+\+TEST}} (teste\+\_\+preco\+\_\+100)
+\item 
+\doxymbox{\hyperlink{_test___cadastro__prod_8c_ad070356cf0530d7005c147cf3a632172}{MU\+\_\+\+TEST}} (teste\+\_\+preco\+\_\+zero)
+\item 
+\doxymbox{\hyperlink{_test___cadastro__prod_8c_ae79eccd39d436b5c7757f1579ebbf923}{MU\+\_\+\+TEST}} (teste\+\_\+preco\+\_\+quebrado)
+\item 
+\doxymbox{\hyperlink{_test___cadastro__prod_8c_ad828cf2ed99905f253fa487aca5fdb7b}{MU\+\_\+\+TEST}} (teste\+\_\+preco\+\_\+com\+\_\+imposto\+\_\+estado\+\_\+1)
+\item 
+\doxymbox{\hyperlink{_test___cadastro__prod_8c_a6b327d386c3ac30b3d06ab5a83962af9}{MU\+\_\+\+TEST}} (teste\+\_\+preco\+\_\+com\+\_\+imposto\+\_\+outros\+\_\+estados)
+\item 
+\doxymbox{\hyperlink{_test___cadastro__prod_8c_a2bb1dcd555d1f587daba80d8291163a8}{MU\+\_\+\+TEST\+\_\+\+SUITE}} (test\+\_\+suite)
+\item 
+int \doxymbox{\hyperlink{_test___cadastro__prod_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\label{_test___cadastro__prod_8c_doc-func-members}
+\Hypertarget{_test___cadastro__prod_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_test___cadastro__prod_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!main@{main}}
+\index{main@{main}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test___cadastro__prod_8c_ab338451da17c6b3aeee50107d83c0755}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_ab338451da17c6b3aeee50107d83c0755} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{teste\+\_\+preco\+\_\+100}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test___cadastro__prod_8c_ad828cf2ed99905f253fa487aca5fdb7b}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_ad828cf2ed99905f253fa487aca5fdb7b} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{teste\+\_\+preco\+\_\+com\+\_\+imposto\+\_\+estado\+\_\+1}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test___cadastro__prod_8c_a6b327d386c3ac30b3d06ab5a83962af9}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_a6b327d386c3ac30b3d06ab5a83962af9} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{teste\+\_\+preco\+\_\+com\+\_\+imposto\+\_\+outros\+\_\+estados}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test___cadastro__prod_8c_ae79eccd39d436b5c7757f1579ebbf923}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_ae79eccd39d436b5c7757f1579ebbf923} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{teste\+\_\+preco\+\_\+quebrado}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test___cadastro__prod_8c_ad070356cf0530d7005c147cf3a632172}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!MU\_TEST@{MU\_TEST}}
+\index{MU\_TEST@{MU\_TEST}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST()}{MU\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_ad070356cf0530d7005c147cf3a632172} 
+MU\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{teste\+\_\+preco\+\_\+zero}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test___cadastro__prod_8c_a2bb1dcd555d1f587daba80d8291163a8}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!MU\_TEST\_SUITE@{MU\_TEST\_SUITE}}
+\index{MU\_TEST\_SUITE@{MU\_TEST\_SUITE}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{MU\_TEST\_SUITE()}{MU\_TEST\_SUITE()}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_a2bb1dcd555d1f587daba80d8291163a8} 
+MU\+\_\+\+TEST\+\_\+\+SUITE (\begin{DoxyParamCaption}\item[{test\+\_\+suite}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test___cadastro__prod_8c_a9446e804400d4ed5819da30baeb1ab8a}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!Preco\_Com\_Imposto@{Preco\_Com\_Imposto}}
+\index{Preco\_Com\_Imposto@{Preco\_Com\_Imposto}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{Preco\_Com\_Imposto()}{Preco\_Com\_Imposto()}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_a9446e804400d4ed5819da30baeb1ab8a} 
+float Preco\+\_\+\+Com\+\_\+\+Imposto (\begin{DoxyParamCaption}\item[{float}]{preco\+\_\+base}{, }\item[{int}]{id\+\_\+estado}{}\end{DoxyParamCaption})}
+
+
+
+Calcula o preco final incluindo o imposto simulado (Depende do Stub). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preco\+\_\+base} & Preco base do produto. \\
+\hline
+{\em id\+\_\+estado} & ID do estado para calcular o imposto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Preco total com imposto. 
+\end{DoxyReturn}
+\Hypertarget{_test___cadastro__prod_8c_ae6968fe409c42b6910ad2d67ce348751}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!Preco\_Final\_Cons@{Preco\_Final\_Cons}}
+\index{Preco\_Final\_Cons@{Preco\_Final\_Cons}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{Preco\_Final\_Cons()}{Preco\_Final\_Cons()}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_ae6968fe409c42b6910ad2d67ce348751} 
+float Preco\+\_\+\+Final\+\_\+\+Cons (\begin{DoxyParamCaption}\item[{float}]{preco\+\_\+f}{}\end{DoxyParamCaption})}
+
+
+
+Calcula o preco final para o consumidor (margem de 60\%). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preco\+\_\+f} & Preco de custo do fornecedor (float). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O preco final ajustado (float). 
+\end{DoxyReturn}
+\Hypertarget{_test___cadastro__prod_8c_a6902737ea7d2b8de9ba87f382a514087}\index{Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}!stub\_buscar\_imposto\_bd@{stub\_buscar\_imposto\_bd}}
+\index{stub\_buscar\_imposto\_bd@{stub\_buscar\_imposto\_bd}!Test\_Cadastro\_prod.c@{Test\_Cadastro\_prod.c}}
+\doxysubsubsection{\texorpdfstring{stub\_buscar\_imposto\_bd()}{stub\_buscar\_imposto\_bd()}}
+{\footnotesize\ttfamily \label{_test___cadastro__prod_8c_a6902737ea7d2b8de9ba87f382a514087} 
+float stub\+\_\+buscar\+\_\+imposto\+\_\+bd (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+estado}{}\end{DoxyParamCaption})}
+
+
+
+Stub:\+ Simula a busca do percentual de imposto no banco de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+estado} & ID do estado para consulta de imposto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O percentual de imposto simulado. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Essa funcao eh um stub para simular dependencias externas nos testes. 
+\end{DoxyNote}

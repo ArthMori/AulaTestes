@@ -2,6 +2,11 @@
 #include <string.h>
 #include <ctype.h>
 
+/**
+ * @brief Valida as regras de negocio de uma senha (max 6 chars, letras e numeros).
+ * @param senha Array de caracteres contendo a senha a ser validada.
+ * @return 1 se a senha for valida, 0 se for invalida.
+ */
 int validarSenha(char senha[]) {
 
     int i;
@@ -9,7 +14,6 @@ int validarSenha(char senha[]) {
     int senha_num = 0;
 
     for(i = 0; i < strlen(senha); i++) {
-
         if(isalpha(senha[i]))
             senha_letra = 1;
 

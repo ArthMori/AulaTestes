@@ -27,6 +27,17 @@ Toda a documentação técnica dos protótipos, parâmetros e retornos foi feita
 
 ---
 
+### ⚙️ Como gerar a documentação (Doxygen)
+O projeto já está pré-configurado. Para gerar ou atualizar a documentação visual (HTML) após fazer alguma alteração no código, siga os passos abaixo:
+
+1. Abra o aplicativo **Doxywizard** na sua máquina.
+2. No menu superior, clique em `File` > `Open...`.
+3. Selecione o arquivo `Doxyfile` que está na raiz deste repositório. *(Isso vai carregar todas as configurações do nosso projeto automaticamente)*.
+4. Vá direto para a aba **Run**.
+5. Clique no botão **Run doxygen**.
+6. **Pronto!** Vá até a pasta `Docs/html` e abra o arquivo `index.html` no seu navegador para ver o site da documentação atualizado.
+
+---
 ## Para o grupo:
 Guia rápido de comandos básicos para subirmos as alterações:
 

@@ -56,35 +56,35 @@ MU_TEST(test_validar_estoque){
 MU_TEST(teste_senha_valida){
 	mu_assert(
 		validarSenha("abc123") == 1,
-		"ERRO: SENHA VALIDA BLOQUEADA"
+		"SENHA VALIDA"
 	);
 }
 
 MU_TEST(teste_sem_numero){
 	mu_assert(
 		validarSenha("abcdef") == 0,
-		"ERRO: SENHA SEM NUMERO ACEITA"
+		"ERRO: SENHA SEM NUMERO"
 	);
 }
 
 MU_TEST(teste_sem_letra){
 	mu_assert(
 		validarSenha("123456") == 0,
-		"ERRO: SENHA SEM LETRA ACEITA"
+		"ERRO: SENHA SEM LETRA"
 	);
 }
 
 MU_TEST(teste_maior_que_6){
 	mu_assert(
 		validarSenha("abc1234") == 0,
-		"ERRO: SENHA MAIOR QUE 6 ACEITA"
+		"ERRO: SENHA DEVE CONTER 6"
 	);
 }
 
 MU_TEST(teste_senha_vazia){
 	mu_assert(
 		validarSenha("") == 0,
-		"ERRO: SENHA VAZIA ACEITA"
+		"ERRO: SENHA VAZIA"
 	);
 }
 

@@ -28,13 +28,18 @@ int validar_estoque(int estoque_disponivel, int quantidade_solicitada) {
 // ==========================================
 int validarSenha(char senha[]) {
     int i, senha_letra = 0, senha_num = 0;
+    
     if(strlen(senha) > 6 || strlen(senha) == 0) return 0;
     for(i = 0; i < strlen(senha); i++) {
         if(isalpha(senha[i])) senha_letra = 1;
         if(isdigit(senha[i])) senha_num = 1;
     }
-    if(!senha_letra || !senha_num) return 0;
-    return 1;
+    if(senha_letra && senha_num)
+        return 1;
+    else {
+    	return 0;
+	}
+
 }
 
 // ==========================================
